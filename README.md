@@ -5,6 +5,7 @@ This project was primarily started as a way to extract content from web pages wi
 
 ## Running:
 ``` python
+# install requirements `pip install -r requirements.txt`
 # Put the noderank.py file in your working directory
 import noderank
 url="https://salience.co.uk/insight/magazine/basic-log-file-analysis/"
