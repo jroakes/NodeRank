@@ -26,10 +26,10 @@ This algorithm does the following.
 ## Notes
 * To run the Jupyter notebook, you will need to install `dragnet` and `boilerpipe3` via pip.  Tested on ubuntu.  Had issues installing dragnet on windows due to GNU depencencies.
 * If you can think of a way to improve or want to contribute, email me at `jroakes@gmail.com`.
-* Hamlet Batista supplied a Colaboraory link (here)[https://colab.research.google.com/github/jroakes/NodeRank/blob/master/noderank.ipynb]
+* Hamlet Batista supplied a Colaboraory link [here](https://colab.research.google.com/github/jroakes/NodeRank/blob/master/noderank.ipynb).
 
 ## Acknowledgements
-* Ideas and code taken from (An Introduction to Text Summarization using the TextRank Algorithm with Python implementation)[https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/]
+* Ideas and code taken from [An Introduction to Text Summarization using the TextRank Algorithm with Python implementation](https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/).
 
 
 
