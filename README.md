@@ -1,7 +1,7 @@
 # NodeRank
 Web Content Extraction using the PageRank algorithm to find the element containing the best content.
 
-This project was primarily started as a way to extract content from web pages with reasonable accuracy, omitting chrome and other superfluous code to get the meat of the content only.
+This project was primarily started as a way to extract quality content from web pages with reasonable accuracy, omitting chrome and other superfluous code, on serverless infrastructures like AWS Lambda. There are still a few hurdles on Lambda like making the Punkt (NLTK) library available and fitting within size restrictions of stored code, but it is doable, where in the case of Dragnet and Boilerpipe, dependancy and size issues make this a very difficult, perhaps impossible, task.
 
 ## Running:
 ``` python
