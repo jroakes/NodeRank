@@ -96,11 +96,17 @@ def find_content(html):
     return prepare_sentences(text)
 
 
-def extract_content_pagerank(url, timeout=10):
+def extract_content_noderank(url=None, html=None, timeout=10):
     
-    headers = {'user-agent': getUA()}
-    r = requests.get(url, headers = headers, verify=False, timeout=timeout)
-    html = r.content
+    if url:
+        headers = {'user-agent': getUA()}
+        r = requests.get(url, headers = headers, verify=False, timeout=timeout)
+        html = r.content
+    elif html:
+        pass
+    else:
+        raise Exception('You must supply either `url` or `html`')
+        
     return find_content(html)
     
 
@@ -110,4 +116,4 @@ url="https://www.nytimes.com/2019/02/05/technology/artificial-intelligence-drug-
 #url="https://www.clearwaycommunitysolar.com/"
 #url="https://thenewstack.io/dr-michael-stonebraker-a-short-history-of-database-systems/"
 
-print(extract_content_pagerank(url, timeout=10))
+print(extract_content_noderank(url=url, timeout=10))
