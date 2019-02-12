@@ -18,13 +18,13 @@ Since there is a structural relationship between the nodes in the DOM of a webpa
 This algorithm does the following.
 1. The `body` element of the page is exracted using BeautifulSoup.
 1. Unneccesary elements are stripped out of the `body` node. eg. `<script>`, `<style>`, etc.  This can be adjusted to suit your needs.
-1. A matrix (`sim_mat`) is initialized with zeros and for each pairwise node combintation across the x and y axis, a "proability" is established based on the number of sentences of the child and the distance between the nodes.
+1. A matrix (`sim_mat`) is initialized with zeros and for each pairwise node combintation across the x and y axis. A "proability" is established based on the number of sentences of the child and the distance between the nodes.
 1. This matrix is then passed to the networkx PageRank agorithm and the resulting nodes are ranked by relative strength.
 1. The top node is returned and the text is gotten using the BeautifulSoup `get_text()` method.
 1. We then apply some light NLP post-processing to clean things up a bit more.
 
 ## Notes
-* To run the Jupyter notebook, you will need to install `dragnet` and `boilerpipe3` via pip.  Tested on ubuntu.  Had issues installing dragnet on windows due to GNU depencencies.
+* To run the Jupyter notebook, you will need to install `dragnet` and `boilerpipe3` via pip.  Tested on Ubuntu.  Had issues installing dragnet on windows due to GNU depencencies.
 * If you can think of a way to improve or want to contribute, email me at `jroakes@gmail.com`.
 * Hamlet Batista supplied a Colaboraory link [here](https://colab.research.google.com/github/jroakes/NodeRank/blob/master/noderank.ipynb).
 
