@@ -22,6 +22,13 @@ This algorithm does the following.
 1. The top node is returned and the text is gotten using the BeautifulSoup `get_text()` method.
 1. We then apply some light NLP post-processing to clean things up a bit more.
 
+## Notes
+* To run the Jupyter notebook, you will need to install `dragnet` and `boilerpipe3` via pip.  Tested on ubuntu.  Had issues installing dragnet on windows due to GNU depencencies.
+* If you can think of a way to improve or want to contribute, email me at `jroakes@gmail.com`.
+
+## Acknowledgements
+* Ideas and code taken from (An Introduction to Text Summarization using the TextRank Algorithm (with Python implementation))[https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/]
+
 
 
 
